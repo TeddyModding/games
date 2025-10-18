@@ -1,0 +1,70 @@
+{
+  "warnSection": {
+    "enabled": false,
+    "backgroundColor": "#465EDF",
+    "icon": "ti ti-bell",
+    "title": "Mod Update: LAC",
+    "subtitle": "The Los Angeles Crimes mod has been updated with new features.",
+    "link": {
+      "required": true,
+      "url": "https://yamodder.github.io/games/?game=los-angeles-crimes",
+      "text": "Update Now"
+    }
+  },
+  "categories": [
+    {
+      "name": "Survival",
+      "icon": "ti ti-biohazard",
+      "games": [
+        {
+          "recommended": false,
+          "banner": "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/kefirgames/70124523-5200-4080-865e-42274272e431.png",
+          "image": "https://play-lh.googleusercontent.com/1NJaEmZal-WWfNTcpQkpO0Z0U4SbLMcit2K3DDW2_BQ7OJkyn1at4zDAgBGCfZLLubDd",
+          "title": "Last Day on Earth: Survival",
+          "version": "v1.40.1",
+          "categoryname": "Survival",
+          "lastUpdated": "03-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://goog",
+              "howdown": "https://youtube.com/shorts/J4-rEDr2ISc?si=FjEnpWJIU_nB56_T"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/86u_ndSEjXU",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "Soccer",
+      "icon": "ti ti-play-football",
+      "games": [
+        {
+          "recommended": true,
+          "banner": "https://play-lh.googleusercontent.com/Ply3zoGsezv6X7BVYO61r3z-VtTEIb4HsUKugB99lQo8FD6AQ9wQBf5T6qsr_TbWNgsvNg4tfulM3sSZTOIB=w648-h364-rw",
+          "image": "https://play-lh.googleusercontent.com/ZzjhspcvWy_Bh6Uh-YMfpADmGPPQHFqa8Ig_cp4mXEeLGgSxKFHSNnIXeUraaKYoM5JSvohYCII56CGmfXskUA=w256",
+          "title": "Soccer Manager 2026",
+          "version": "v3.1.3",
+          "categoryname": "Soccer",
+          "lastUpdated": "12-12-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://goog",
+              "howdown": "https://youtube.com/shorts/J4-rEDr2ISc?si=FjEnpWJIU_nB56_T"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
+    }
+  ]
+}

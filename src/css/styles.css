@@ -1,0 +1,1700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --theme-bg: #1c1c1c;
+    --theme-bg-dark: #161616;
+    --theme: #8532b8;
+    --theme-dark: #642d86;
+    --themehowtodown: #dfb646;
+    --themehowtodown-dark: #a0993a;
+    --themehowtoinstall: #4bdf46;
+    --themehowtoinstall-dark: #3aa03f;
+    --themesource: #000000;
+    --themesource-dark: #2c2c2c;
+
+    --border: 0.5px solid var(--theme);
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --c-body: 0, 0%, 9%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: var(--fw-400);
+    color: white;
+}
+
+/* Remove scrollbars de TODOS os elementos */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    text-align: center;
+    padding: 1rem;
+    gap: 0.5rem;
+
+    i {
+        font-size: 2.5rem;
+    }
+}
+
+/* Permite scroll apenas em elementos específicos que precisam */
+.modal-content,
+.card_games,
+.detail_game,
+.mainall {
+    overflow-y: auto;
+    /* Permite scroll apenas onde é necessário */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.modal-content::-webkit-scrollbar,
+.card_games::-webkit-scrollbar,
+.detail_game::-webkit-scrollbar,
+.mainall::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: var(--theme-bg);
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+
+.navbar {
+    flex: 0 0 70px;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    background-color: var(--theme-bg);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: var(--border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        height: 2.5rem;
+    }
+
+    svg.hamburger {
+        width: 2.5rem;
+        height: 2.5rem;
+        stroke: white;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        cursor: pointer;
+        transition: stroke 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            stroke: var(--theme);
+        }
+    }
+
+}
+
+.warn_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0 1rem;
+    border: 1px solid #ef4444;
+    background-color: #ef444465;
+    margin-bottom: 1rem;
+
+    i {
+        font-size: 1.15rem;
+        color: white;
+    }
+
+    p {
+        font-size: 0.85rem;
+        color: white;
+        padding: 0.75rem;
+        text-align: center;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+
+.contwarns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 1rem 0.75rem 0 0.75rem;
+    gap: 10px;
+
+    .warn {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        height: auto;
+        gap: 0.5rem;
+        background-color: #df4653;
+
+        span {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: var(--fw-500);
+
+            i {
+                font-size: 1.75rem;
+                background-color: #0e0e0e23;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                margin-right: 8px;
+            }
+        }
+
+        p {
+            font-size: 0.9rem;
+            font-weight: var(--fw-400);
+            padding: 0.25rem 0;
+
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            margin-left: auto;
+            background-color: white;
+            color: black;
+            width: auto;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: var(--fw-500);
+            transition: all 0.3s ease;
+
+            i {
+                margin-left: 5px;
+                color: black;
+            }
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+}
+
+.search input {
+    flex: 1;
+    padding: 13px 12px;
+    border-radius: 0.75rem;
+    border: 1px solid var(--theme);
+    background-color: var(--theme-bg-dark);
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.search input:focus {
+    border-color: var(--theme-dark);
+}
+
+
+.container_recommended {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.category-title-recommended {
+    font-size: 1.3rem;
+    font-weight: var(--fw-500);
+    margin-bottom: 20px;
+    color: #fff;
+    /* texto branco */
+    border-left: 4px solid var(--theme);
+    /* mantém a linha na cor do tema */
+    padding-left: 8px;
+}
+
+.scroll_container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.scroll_container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll_container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.cards_row {
+    display: flex;
+    gap: 1rem;
+}
+
+.card_game {
+    position: relative;
+    min-width: 300px;
+    height: 190px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente ao lado da imagem */
+    padding: 0.8rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card_game:hover {
+    border: 1px solid white;
+}
+
+.card_game::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    z-index: 0;
+}
+
+.card_game .icon_game {
+    transition: transform 0.3s ease;
+    /* suaviza o movimento */
+}
+
+/* quando o mouse passa no card, só a imagem aumenta */
+.card_game:hover .icon_game {
+    transform: scale(1.05);
+    /* aumenta um pouquinho */
+}
+
+.icon_game {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    z-index: 1;
+    margin-right: 0.8rem;
+}
+
+.info_game {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    bottom: 12.8px;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: 90%;
+}
+
+.infocd {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    gap: 0.25rem;
+}
+
+.title_game {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    /* mudado para block */
+    margin: 0;
+    width: 100%;
+    /* ou 53px se quiser limite fixo */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.categorytag_game {
+    background-color: var(--theme);
+    color: white;
+    max-width: max-content;
+    padding: 5px 8px;
+    display: inline-block;
+    /* antes era block — agora ajusta ao tamanho do conteúdo */
+    border-radius: 20px;
+    font-size: 0.75rem;
+    line-height: 1;
+    white-space: nowrap;
+    /* impede quebrar o texto se for curto */
+}
+
+
+
+
+
+
+
+
+
+
+button#all-categories {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--theme);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    color: white;
+    font-weight: var(--fw-500);
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#all-categories:hover {
+    background-color: var(--theme-dark);
+    transform: scale(1.05);
+}
+
+button#all-categories svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: hidden;
+    /* Impede scroll no modal inteiro */
+}
+
+/* Quando o modal estiver aberto, bloqueia o scroll da página */
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: var(--theme-bg-dark);
+    padding: 0 20px 20px 20px;
+    border-radius: 2rem;
+    border: var(--border);
+    width: 350px;
+    text-align: center;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-height: 90vh;
+    /* Limita a altura máxima relativa à viewport */
+    overflow-y: auto;
+    /* Adiciona scroll vertical quando necessário */
+
+}
+
+
+.modal-content p {
+    grid-column: span 2;
+    font-weight: var(--fw-500);
+    font-size: 1.1rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    background-color: var(--theme-bg-dark);
+    padding: 20px 0;
+    z-index: 1;
+}
+
+.modal-content p i {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-content p i:hover {
+    color: var(--theme-dark);
+}
+
+.modal-content ul {
+    display: contents;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content li {
+    padding: 8px;
+    background-color: var(--theme);
+    border-radius: .45rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.85rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.modal-content li i {
+    font-size: 1.75rem;
+}
+
+.modal-content li:hover {
+    background-color: var(--theme-dark);
+}
+
+
+
+
+.category {
+    width: 100%;
+    padding: 20px;
+}
+
+.category-title {
+    font-size: 1.3rem;
+    font-weight: var(--fw-500);
+    color: #fff;
+    /* texto branco */
+    border-left: 4px solid var(--theme);
+    /* mantém a linha na cor do tema */
+    padding-left: 8px;
+}
+
+.card_games::-webkit-scrollbar {
+    display: none;
+    /* esconde scrollbar no Chrome/Safari */
+}
+
+.card_games {
+    display: flex;
+    /* flex horizontal */
+    flex-direction: row;
+    /* linha */
+    overflow-x: auto;
+    /* habilita scroll horizontal */
+    gap: 1rem;
+    /* espaçamento entre cards */
+    padding: 10px;
+    /* opcional, pra não encostar nas bordas */
+    width: 100%;
+    height: auto;
+
+    /* opcional: esconder barra de rolagem no webkit */
+    -webkit-overflow-scrolling: touch;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+    /* importante: cards não encolhem nem crescem */
+    width: 160px;
+    height: 205px;
+    background-color: var(--theme-bg-dark);
+    border: 0.05rem solid var(--theme);
+    border-radius: 1.45rem;
+    flex-direction: column;
+    padding: 7px;
+    margin: 0;
+    /* margem pode ser controlada pelo gap do flex */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card .tag {
+    background-color: #ef4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-weight: bold;
+    height: 1.5rem;
+    width: auto;
+    border-radius: 0px 0px 0px 10px;
+    font-size: 0.5rem;
+    padding: 0 .5rem;
+}
+
+.card .tag-new {
+    background-color: #44ef44 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: auto;
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    height: 1.5rem;
+    width: auto;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 0.5rem;
+    padding: 0 .5rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1.1rem;
+    max-height: 135px;
+    object-fit: cover;
+}
+
+.card .title {
+    font-size: 1rem;
+    font-weight: var(--fw-500);
+    padding: 0.25rem 0;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card .info {
+    font-size: 0.9rem;
+    width: 100%;
+    display: flex;
+    padding: 0 0.1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .version {
+        font-weight: var(--fw-400);
+        font-size: 0.8rem;
+    }
+
+    .categoryname {
+        background-color: var(--theme);
+        color: white;
+        padding: 2px 6px;
+        border-radius: 5px;
+        font-size: 0.75rem;
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL DETALHES DO GAME */
+.detail_game {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+
+.detail_gameinfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-bg);
+}
+
+.mainall {
+    flex: 1;
+    /* ocupa o resto do espaço */
+    overflow-y: auto;
+    /* conteúdo rola separado */
+    padding: 1rem;
+}
+
+
+.navbar-gameinfo {
+    flex: 0 0 70px;
+    /* altura fixa */
+    border-bottom: var(--border);
+    background-color: var(--theme-bg);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    position: sticky;
+    /* fica colado quando rola */
+    top: 0;
+    padding: 0 20px;
+    justify-content: flex-end;
+
+}
+
+#close-modal2 {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#close-modal2:hover {
+    color: var(--theme);
+
+}
+
+.media_info_middle {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+
+.game_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem 0.9rem;
+}
+
+.gamename {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.gameimage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.gameimage img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2.5rem;
+    object-fit: cover;
+}
+
+.gameimage label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef4444;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+.gamespec {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1.35rem 0;
+    flex-wrap: wrap;
+    list-style: none;
+    /* remove a bolinha */
+}
+
+.specs-item {
+    text-align: center;
+}
+
+.spec-label {
+    display: block;
+    align-items: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 2px;
+    color: #fff;
+
+    i {
+        padding: 0 0.2rem;
+    }
+}
+
+.spec-cont {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.gamedownload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem 0;
+    width: 100%;
+
+    .download-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+        /* espaço entre os dois botões */
+    }
+
+    .download-wrapper .btndownload {
+        flex: 1;
+        /* ocupa todo o espaço disponível */
+        height: 3.5rem;
+    }
+
+    .download-wrapper .btnhowtodownload {
+        width: 4rem;
+        /* tamanho fixo do botão de ajuda */
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 32px;
+    }
+
+
+    #download-buttons-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem 0.5rem;
+
+        .btndownload {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    a {
+        background-color: var(--theme);
+        height: 3.5rem;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: none;
+        /* remove sublinhado */
+
+        span {
+            display: flex;
+            /* faz span ser flex container */
+            align-items: center;
+            /* centraliza verticalmente ícone e texto */
+            font-weight: var(--fw-500);
+            gap: 0.25rem;
+            /* espaço entre ícone e texto */
+
+            i {
+                font-size: 1.2rem;
+                /* padding não precisa mais, usamos gap no span */
+            }
+        }
+
+        &:hover {
+            background-color: var(--theme-dark);
+            transition: background-color 0.3s ease;
+            border: 1px solid white;
+        }
+    }
+
+    .btnhowtodownload {
+        background-color: var(--themehowtodown);
+        width: 5rem;
+
+        &:hover {
+            background-color: var(--themehowtodown-dark);
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    .btnhowtoinstall {
+        background-color: var(--themehowtoinstall);
+
+        &:hover {
+            background-color: var(--themehowtoinstall-dark);
+            transition: background-color 0.3s ease;
+        }
+    }
+
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.75rem;
+    gap: 0.75rem;
+    width: 100%;
+
+    a {
+        background-color: var(--theme);
+        height: 3.5rem;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: none;
+        /* remove sublinhado */
+
+        span {
+            display: flex;
+            /* faz span ser flex container */
+            align-items: center;
+            /* centraliza verticalmente ícone e texto */
+            font-weight: var(--fw-500);
+            font-size: 0.85rem;
+            gap: 0.25rem;
+            /* espaço entre ícone e texto */
+
+            i {
+                font-size: 1.2rem;
+                /* padding não precisa mais, usamos gap no span */
+            }
+        }
+
+
+        &:hover {
+            background-color: var(--theme-dark);
+            transition: background-color 0.3s ease;
+            border: 1px solid white;
+        }
+    }
+
+    .btnyoutube {
+        background-color: #df4646;
+
+        &:hover {
+            background-color: #b94343;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    .btndiscord {
+        background-color: #3b85f3;
+
+        &:hover {
+            background-color: #2965c1;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+    .btnbug {
+        background-color: #0e0e0e;
+
+        &:hover {
+            background-color: #3d3d3d;
+            transition: background-color 0.3s ease;
+        }
+    }
+
+}
+
+.gamedemo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    iframe {
+        margin-top: 0.5rem;
+        width: 90%;
+        height: 13rem;
+        border: 1px solid white;
+        border-radius: 1rem;
+    }
+
+    p {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 0.75rem;
+        color: #fff;
+    }
+}
+
+.gameinstructions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    .headintro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1.25rem;
+        font-weight: var(--fw-500);
+        text-align: center;
+        margin-bottom: 0.5rem;
+        color: #fff;
+
+        span {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            padding-top: 0.15rem;
+        }
+    }
+
+}
+
+.lista-container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-grid li {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    padding: 10px;
+    border-radius: 8px;
+
+    p {
+        display: flex;
+        align-items: flex-start;
+        font-size: 0.95rem;
+        flex-direction: column;
+
+        span {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            padding-top: 0.15rem;
+        }
+    }
+
+    i {
+        margin-right: 8px;
+        color: white;
+        font-size: 1.25rem;
+        padding: 0.65rem;
+        border-radius: 50%;
+        background-color: var(--theme);
+    }
+}
+
+
+footer {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--theme-bg-dark);
+    height: 10rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* imagem apagada */
+footer img {
+    height: 2.5rem;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+footer img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    /* volta ao normal no hover */
+}
+
+/* lista de ícones */
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+}
+
+footer ul li a {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* ícones começam apagados */
+footer ul li a i {
+    color: #fff;
+    opacity: 0.5;
+    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* no hover do link, fica normal */
+footer ul li a:hover i {
+    opacity: 1;
+}
+
+/* YouTube hover extra */
+footer ul li a.yt:hover i {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+
+/* Discord hover extra */
+footer ul li a.dc:hover i {
+    color: #3b85f3;
+    transform: scale(1.2);
+}
+
+/* texto do rodapé apagado */
+footer span {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+
+
+
+
+@media (min-width: 700px) {
+
+
+
+    .game_info {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .gamename {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .gamespec {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0;
+        flex-wrap: wrap;
+        list-style: none;
+        /* remove a bolinha */
+    }
+
+    .media_info_middle {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .lista-container {
+        width: 100%;
+        padding: 1rem 3rem;
+    }
+
+    .lista-grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .socialmedia {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0.75rem;
+        gap: 0.75rem;
+        width: auto;
+
+        a {
+            background-color: var(--theme);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            /* remove sublinhado */
+
+            span {
+                display: flex;
+                /* faz span ser flex container */
+                align-items: center;
+                font-size: 0;
+                /* esconde o texto */
+                justify-content: center;
+                /* centraliza verticalmente ícone e texto */
+                font-weight: var(--fw-500);
+
+                /* espaço entre ícone e texto */
+
+                i {
+                    padding-left: 4px;
+                    font-size: 1.2rem;
+                    /* padding não precisa mais, usamos gap no span */
+                }
+            }
+
+
+            &:hover {
+                background-color: var(--theme-dark);
+                transition: background-color 0.3s ease;
+                border: 1px solid white;
+            }
+        }
+
+        .btnyoutube {
+            background-color: #df4646;
+
+            &:hover {
+                background-color: #b94343;
+                transition: background-color 0.3s ease;
+            }
+        }
+
+        .btndiscord {
+            background-color: #3b85f3;
+
+            &:hover {
+                background-color: #2965c1;
+                transition: background-color 0.3s ease;
+            }
+        }
+
+    }
+
+    .gamedemo {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        iframe {
+            margin-top: 0.5rem;
+            width: 60%;
+            height: 13rem;
+
+            border: 1px solid white;
+            border-radius: 1rem;
+        }
+    }
+
+    .category-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.5rem;
+    }
+
+}
+
+#category-modal-overlay .detail_gameinfo .navbar-gameinfo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#category-modal-overlay .detail_gameinfo .navbar-gameinfo i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#category-modal-overlay .detail_gameinfo .navbar-gameinfo i:hover {
+    color: var(--theme);
+}
+
+.category-header-with-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category-arrow {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+
+.category-arrow:hover {
+    color: var(--theme-dark);
+}
+
+/* Grid para os cards no modal de categoria */
+.category-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.category-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Header do modal de categoria */
+.category-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Sistema de grid responsivo apenas para desktop */
+@media (min-width: 800px) {
+    .card_games {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        overflow-x: visible;
+        gap: 1rem;
+        position: relative;
+    }
+
+    /* Mantém a proporção original dos cards */
+    .card {
+        width: 100% !important;
+        height: 215px !important;
+        max-width: 160px;
+        justify-self: center;
+    }
+
+    .card img {
+        max-height: 135px !important;
+    }
+
+    /* Efeito de fade para indicar mais conteúdo */
+    .card_games::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(transparent, var(--theme-bg));
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card_games.has-hidden-cards::after {
+        opacity: 1;
+    }
+
+    /* Cards escondidos */
+    .card.hidden-card {
+        display: none;
+    }
+
+    /* Container do botão Ver Mais */
+    .load-more-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .load-more-btn {
+        background: linear-gradient(135deg, var(--theme), var(--theme-dark));
+        border: none;
+        border-radius: 25px;
+        color: white;
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        font-weight: var(--fw-500);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 15px rgba(223, 70, 119, 0.4);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .load-more-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+        z-index: -1;
+    }
+
+    .load-more-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(223, 70, 119, 0.6);
+    }
+
+    .load-more-btn:hover::before {
+        left: 100%;
+    }
+
+    .load-more-btn:active {
+        transform: translateY(0);
+    }
+
+    .load-more-btn i {
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .load-more-btn:hover i {
+        transform: translateY(2px);
+    }
+}
+
+
+@media (min-width: 990px) {
+
+    .container_recommended {
+        width: 100%;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .category-title-recommended {
+        font-size: 1.3rem;
+        font-weight: var(--fw-500);
+        margin-bottom: 20px;
+        color: #fff;
+        border-left: 4px solid var(--theme);
+        padding-left: 8px;
+    }
+
+    .scroll_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .scroll_container::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .scroll_container::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+@media (min-width: 990px) {
+    .card_game {
+        min-width: 224px;
+        width: 100%;
+        height: 210px;
+        max-width: 100%;
+        flex: 1 1 auto;
+        box-sizing: border-box;
+    }
+
+    .cards_row {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .gamedownload {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0 0.75rem;
+        width: 100%;
+
+        a {
+            background-color: var(--theme);
+            height: 3.5rem;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            /* remove sublinhado */
+
+            span {
+                display: flex;
+                /* faz span ser flex container */
+                align-items: center;
+                /* centraliza verticalmente ícone e texto */
+                font-weight: var(--fw-500);
+                gap: 0.25rem;
+                /* espaço entre ícone e texto */
+
+                i {
+                    font-size: 1.2rem;
+                    /* padding não precisa mais, usamos gap no span */
+                }
+            }
+
+            &:hover {
+                background-color: var(--theme-dark);
+                transition: background-color 0.3s ease;
+                border: 1px solid white;
+            }
+        }
+
+        .btnhowtodownload {
+            background-color: var(--themehowtodown);
+
+            &:hover {
+                background-color: var(--themehowtodown-dark);
+                transition: background-color 0.3s ease;
+            }
+        }
+
+        .btnhowtoinstall {
+            background-color: var(--themehowtoinstall);
+
+            &:hover {
+                background-color: var(--themehowtoinstall-dark);
+                transition: background-color 0.3s ease;
+            }
+        }
+
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    .navbar {
+        border: var(--border);
+        margin-top: 1rem;
+        border-radius: 1.25rem;
+    }
+
+    .gamedemo {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        iframe {
+            margin-top: 0.5rem;
+            width: 50%;
+            height: 20rem;
+
+            border: 1px solid white;
+            border-radius: 1rem;
+        }
+    }
+
+    .category-cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card_games {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        padding: 0 15rem;
+    }
+
+    .mainall {
+        padding: 0 15rem;
+    }
+
+    .gamedemo {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        iframe {
+            margin-top: 0.5rem;
+            width: 50%;
+            height: 16rem;
+
+            border: 1px solid white;
+            border-radius: 1rem;
+        }
+    }
+
+    .card_games {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
