@@ -17,7 +17,7 @@
       "icon": "ti ti-biohazard",
       "games": [
         {
-          "recommended": true,
+          "recommended": false,
           "banner": "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/kefirgames/70124523-5200-4080-865e-42274272e431.png",
           "image": "https://play-lh.googleusercontent.com/1NJaEmZal-WWfNTcpQkpO0Z0U4SbLMcit2K3DDW2_BQ7OJkyn1at4zDAgBGCfZLLubDd",
           "title": "Last Day on Earth: Survival",
