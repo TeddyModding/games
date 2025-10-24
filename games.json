@@ -17,7 +17,7 @@
       "icon": "ti ti-biohazard",
       "games": [
         {
-          "recommended": false,
+          "recommended": true,
           "banner": "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/kefirgames/70124523-5200-4080-865e-42274272e431.png",
           "image": "https://play-lh.googleusercontent.com/1NJaEmZal-WWfNTcpQkpO0Z0U4SbLMcit2K3DDW2_BQ7OJkyn1at4zDAgBGCfZLLubDd",
           "title": "Last Day on Earth: Survival",
@@ -38,6 +38,30 @@
           }
         },
         {
+          "recommended": false,
+          "banner": "https://static.tildacdn.one/tild3963-3861-4630-a136-643735323561/103.jpg",
+          "image": "https://play-lh.googleusercontent.com/qhJSd9LTZMTz0V_dB-rsYPBCghNX_AHIh1O_8pekd_lkkvo1W5yQDJl8APGDCUYN7yg=w240-h480-rw",
+          "title": "Grim Soul: Dark Survival RPG",
+          "version": "v7.7.1",
+          "categoryname": "Survival",
+          "lastUpdated": "24-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/TghNn8mQUWLL14k",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/AuwEm_n_Xgc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
+    },
+    
+    {
           "recommended": false,
           "banner": "https://play-lh.googleusercontent.com/4wU4ekYoCYSqJTlUzPHwnUMxoqAA4ge9uEHibJ_id2n-SeMAKf4-bHuKDiOhzF6SQQ=w526-h296-rw",
           "image": "https://play-lh.googleusercontent.com/qohHhRTEEciPtmvwtyGatjYoR5667XZiuc17cJw1VPTTFoB3Wo1XqGHWixJA0lvQ2S4=w240-h480-rw",
@@ -60,12 +84,13 @@
         }
       ]
     },
+
     {
       "name": "Soccer",
       "icon": "ti ti-play-football",
       "games": [
         {
-          "recommended": true,
+          "recommended": false,
           "banner": "https://play-lh.googleusercontent.com/Ply3zoGsezv6X7BVYO61r3z-VtTEIb4HsUKugB99lQo8FD6AQ9wQBf5T6qsr_TbWNgsvNg4tfulM3sSZTOIB=w648-h364-rw",
           "image": "https://play-lh.googleusercontent.com/ZzjhspcvWy_Bh6Uh-YMfpADmGPPQHFqa8Ig_cp4mXEeLGgSxKFHSNnIXeUraaKYoM5JSvohYCII56CGmfXskUA=w256",
           "title": "Soccer Manager 2026",
