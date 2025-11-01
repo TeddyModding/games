@@ -107,6 +107,33 @@
           }
         }
       ]
+    },
+    {
+      "name": "Simulation",
+      "icon": "ti ti-hand-click",
+      "games": [
+        {
+          "recommended": true,
+          "banner": "https://play-lh.googleusercontent.com/BUlZxhJpv8Ungr5SARRwbJ_OUdVE0XJGK5QH10dl4aosVq2-OnDz1SPiDnZu18ObHOD-=w526-h296-rw",
+          "image": "https://play-lh.googleusercontent.com/d2MSu2GLYeOSyZJgYNOjjEttsjZ6ci_kyWSm60M_xkkVodOCja2v14rJFEAvwRf0BOY",
+          "title": "Golden Island: Survivors Farm",
+          "version": "v1.0.11",
+          "categoryname": "Simulation",
+          "lastUpdated": "31-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/X41rHD15xTiFFFk",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
     }
   ]
 }
