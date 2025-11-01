@@ -17,8 +17,8 @@
       "icon": "ti ti-biohazard",
       "games": [
         {
-          "recommended": false,
-          "banner": "https://d2duuy9yo5pldo.cloudfront.net/dashboard-resources/kefirgames/70124523-5200-4080-865e-42274272e431.png",
+          "recommended": true,
+          "banner": "https://s2-techtudo.glbimg.com/eryPZn-UQagphzSA7bGPOsx4qFE=/0x0:1120x630/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/G/6/BpCT5BQsiU2ARstMMhAg/last-day-on-earth-survival.jpg",
           "image": "https://play-lh.googleusercontent.com/1NJaEmZal-WWfNTcpQkpO0Z0U4SbLMcit2K3DDW2_BQ7OJkyn1at4zDAgBGCfZLLubDd",
           "title": "Last Day on Earth: Survival",
           "version": "v1.41.0",
@@ -113,7 +113,7 @@
       "icon": "ti ti-hand-click",
       "games": [
         {
-          "recommended": true,
+          "recommended": false,
           "banner": "https://play-lh.googleusercontent.com/BUlZxhJpv8Ungr5SARRwbJ_OUdVE0XJGK5QH10dl4aosVq2-OnDz1SPiDnZu18ObHOD-=w526-h296-rw",
           "image": "https://play-lh.googleusercontent.com/d2MSu2GLYeOSyZJgYNOjjEttsjZ6ci_kyWSm60M_xkkVodOCja2v14rJFEAvwRf0BOY",
           "title": "Golden Island: Survivors Farm",
