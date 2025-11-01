@@ -134,6 +134,33 @@
           }
         }
       ]
+    },
+    {
+      "name": "Casual",
+      "icon": "ti ti-device-gamepad-3",
+      "games": [
+        {
+          "recommended": false,
+          "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3387480/ss_f5fabf9ae6d9c1648b1b1ded0e5f6526f086d1f5.1920x1080.jpg?t=1739536827",
+          "image": "https://play-lh.googleusercontent.com/htXBorP8_s-hD87sTEQGYNqbl3s_I2iPbt7rSFN7NIM3WZB-pIDIb1xivUsTmf3vg1ha",
+          "title": "Mars Survivor",
+          "version": "v1.2.13",
+          "categoryname": "Casual",
+          "lastUpdated": "21-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/FgzVWlpcoWOp2s5",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
     }
   ]
 }
