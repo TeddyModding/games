@@ -159,6 +159,27 @@
             "required": false,
             "url": ""
           }
+        },
+        {
+          "recommended": false,
+          "banner": "https://store-images.s-microsoft.com/image/apps.61775.13534715397594314.396d36b0-f18e-4a03-b27e-02978b279bee.bb842ffe-f349-4f91-9121-ab49bf969d1d?q=90&w=480&h=270",
+          "image": "https://play-lh.googleusercontent.com/jd9DbS45EmScqCFWrqXwcGXaYqe9EEqoaspKSmIwuUM9qoix5SZp5bvRW4qqutA_uRE",
+          "title": "West Escape",
+          "version": "v1.0.22",
+          "categoryname": "Casual",
+          "lastUpdated": "20-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/3wl4aVWHlrvj7O5",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
         }
       ]
     }
