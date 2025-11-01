@@ -57,6 +57,27 @@
             "required": false,
             "url": ""
           }
+        },
+        {
+          "recommended": false,
+          "banner": "https://play-lh.googleusercontent.com/4wU4ekYoCYSqJTlUzPHwnUMxoqAA4ge9uEHibJ_id2n-SeMAKf4-bHuKDiOhzF6SQQ=w526-h296-rw",
+          "image": "https://play-lh.googleusercontent.com/qohHhRTEEciPtmvwtyGatjYoR5667XZiuc17cJw1VPTTFoB3Wo1XqGHWixJA0lvQ2S4=w240-h480-rw",
+          "title": "Live or Die: Survival",
+          "version": "v0.2.466",
+          "categoryname": "Survival",
+          "lastUpdated": "24-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/7v97Fz6z0rWYvan",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/AuwEm_n_Xgc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
         }
       ]
     },
