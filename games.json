@@ -109,7 +109,7 @@
       ]
     },
     {
-      "name": "Simulation",
+      "name": "Simulator",
       "icon": "ti ti-hand-click",
       "games": [
         {
@@ -118,7 +118,7 @@
           "image": "https://play-lh.googleusercontent.com/d2MSu2GLYeOSyZJgYNOjjEttsjZ6ci_kyWSm60M_xkkVodOCja2v14rJFEAvwRf0BOY",
           "title": "Golden Island: Survivors Farm",
           "version": "v1.0.11",
-          "categoryname": "Simulation",
+          "categoryname": "Simulator",
           "lastUpdated": "31-10-2025",
           "downloads": [
             {
@@ -172,6 +172,33 @@
             {
               "text": "Download",
               "url": "https://modsfire.com/3wl4aVWHlrvj7O5",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "RPG",
+      "icon": "ti ti-swords",
+      "games": [
+        {
+          "recommended": false,
+          "banner": "https://i.ytimg.com/vi/tHkWvf-32tQ/maxresdefault.jpg",
+          "image": "https://play-lh.googleusercontent.com/kYqBgsX7_QQlshPMN-MpMvum2MbOJp3qnG4-zDcPDTOTQy2fwOHh-tdLjvJUz6b1e5Sa",
+          "title": "Obsidian Knight RPG",
+          "version": "v1.102.19",
+          "categoryname": "RPG",
+          "lastUpdated": "30-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/7WNkX586fGb8w09",
               "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
             }
           ],
