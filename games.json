@@ -59,13 +59,13 @@
           }
         },
         {
-          "recommended": false,
+          "recommended": true,
           "banner": "https://play-lh.googleusercontent.com/YV6AU38v3esJ6REQFSHOyvF9_TCaUlpSL3XNYoGte2E0AXVzDOhPvqwDaXkPJ1KbJl8=w526-h296-rw",
           "image": "https://play-lh.googleusercontent.com/qhJSd9LTZMTz0V_dB-rsYPBCghNX_AHIh1O_8pekd_lkkvo1W5yQDJl8APGDCUYN7yg=w240-h480-rw",
           "title": "Grim Soul: Dark Survival RPG",
           "version": "v7.7.2",
           "categoryname": "Survival",
-          "lastUpdated": "31-10-2025",
+          "lastUpdated": "30-10-2025",
           "downloads": [
             {
               "text": "Download",
@@ -180,6 +180,27 @@
             "required": false,
             "url": ""
           }
+        },
+        {
+          "recommended": false,
+          "banner": "https://play-lh.googleusercontent.com/v0BpcfRM-QiMarEC-vS2pmg8E2Ye5LWrMCXsZIFN7A1DWCMVJdKubyQezkl7KWtolQ=w526-h296-rw",
+          "image": "https://play-lh.googleusercontent.com/JMMecOL320TKl8HhJ0iqTc1s4pVeLRx2iBMyo2PJ_O7-K0IpuiDH1fDaihTfHxmMTko",
+          "title": "Tank Stars",
+          "version": "v2.13.400",
+          "categoryname": "Casual",
+          "lastUpdated": "31-10-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/qvd29GGi36A4bXi",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
         }
       ]
     },
@@ -226,8 +247,6 @@
             {
               "text": "Download",
               "url": "https://modsfire.com/o69ZK4o27I10Zb3",
-               "text": "Download PC Version",
-              "url": "https://modsfire.com/zzopD84L671R4L0",
               "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
             }
           ],
