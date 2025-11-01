@@ -23,7 +23,7 @@
           "title": "Last Day on Earth: Survival",
           "version": "v1.41.0",
           "categoryname": "Survival",
-          "lastUpdated": "24-10-2025",
+          "lastUpdated": "31-10-2025",
           "downloads": [
             {
               "text": "Download",
@@ -59,7 +59,7 @@
           }
         },
         {
-          "recommended": true,
+          "recommended": false,
           "banner": "https://play-lh.googleusercontent.com/YV6AU38v3esJ6REQFSHOyvF9_TCaUlpSL3XNYoGte2E0AXVzDOhPvqwDaXkPJ1KbJl8=w526-h296-rw",
           "image": "https://play-lh.googleusercontent.com/qhJSd9LTZMTz0V_dB-rsYPBCghNX_AHIh1O_8pekd_lkkvo1W5yQDJl8APGDCUYN7yg=w240-h480-rw",
           "title": "Grim Soul: Dark Survival RPG",
@@ -203,6 +203,35 @@
             }
           ],
           "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shooter",
+      "icon": "ti ti-bomb",
+      "games": [
+        {
+          "recommended": false,
+          "banner": "https://play-lh.googleusercontent.com/TtjCYrpKUbPnjY6Hi7Hxn8pFlOs8tapuJ_rfPwr8Ytu1QtDZv2o_V_hfMF3DEbZiW10=w526-h296-rw",
+          "image": "https://play-lh.googleusercontent.com/oMunmmQytlTwQth8MTc-Yz-sqpRGXlOd3GcweNMVhj5Y1MvR-pyeHnp0jUPCbXyMb8nK=w240-h480-rw",
+          "title": "Erythros Lite",
+          "version": "v24.02.25",
+          "categoryname": "RPG",
+          "lastUpdated": "24-02-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://modsfire.com/o69ZK4o27I10Zb3",
+               "text": "Download PC Version",
+              "url": "https://modsfire.com/zzopD84L671R4L0",
+              "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/watch?v=pI7VFlB6He4",
           "howToInstall": {
             "required": false,
             "url": ""
