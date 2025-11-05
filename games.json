@@ -102,7 +102,7 @@
           ],
           "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
           "howToInstall": {
-            "required": false,
+            "required": true,
             "url": ""
           }
         }
