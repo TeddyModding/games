@@ -33,8 +33,8 @@
           ],
           "demoUrl": "https://www.youtube.com/embed/AuwEm_n_Xgc",
           "howToInstall": {
-            "required": false,
-            "url": ""
+            "required": true,
+            "url": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
           }
         },
     {
@@ -103,7 +103,7 @@
           "demoUrl": "https://www.youtube.com/embed/xbNM7Lqr1Dc",
           "howToInstall": {
             "required": true,
-            "url": ""
+            "url": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
           }
         }
       ]
