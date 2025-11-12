@@ -1,6 +1,6 @@
 {
   "warnSection": {
-    "enabled": true,
+    "enabled": false,
     "backgroundColor": "#4688DF",
     "icon": "ti ti-bug",
     "title": "Bug Fixes",
