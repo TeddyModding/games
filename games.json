@@ -1,6 +1,4 @@
-{
-  "warnSection": {
-    "enabled": false,
+Managerse,
     "backgroundColor": "#465EDF",
     "icon": "ti ti-bell",
     "title": "Mod Update: LAC",
@@ -90,13 +88,13 @@
           "banner": "https://play-lh.googleusercontent.com/Ply3zoGsezv6X7BVYO61r3z-VtTEIb4HsUKugB99lQo8FD6AQ9wQBf5T6qsr_TbWNgsvNg4tfulM3sSZTOIB=w648-h364-rw",
           "image": "https://play-lh.googleusercontent.com/ZzjhspcvWy_Bh6Uh-YMfpADmGPPQHFqa8Ig_cp4mXEeLGgSxKFHSNnIXeUraaKYoM5JSvohYCII56CGmfXskUA=w256",
           "title": "Soccer Manager 2026",
-          "version": "v3.1.6",
-          "categoryname": "Soccer",
-          "lastUpdated": "31-10-2025",
+          "version": "v3.1.76",
+         "categoryname": "Soccer",
+          "lastUpdated"11-11-2025",
           "downloads": [
             {
               "text": "Download",
-              "url": "https://enurl.com.br/sm26-v3-1-6-modmenu-apk",
+              "url": "https://enurl.com.br/sm26-v3-1-7-modmenu-apk",
               "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
             }
           ],
