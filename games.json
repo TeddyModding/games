@@ -1,12 +1,14 @@
 {
-        "backgroundColor": "#465EDF",
-    "icon": "ti ti-bell",
-    "title": "Mod Update: LAC",
-    "subtitle": "The Los Angeles Crimes mod has been updated with new features.",
+  "warnSection": {
+    "enabled": true,
+    "backgroundColor": "#4688DF",
+    "icon": "ti ti-bug",
+    "title": "Bug Fixes",
+    "subtitle": "If you found any BUG/CRASH in any mod, tell me directly like on Discord, I will reupload it..",
     "link": {
       "required": true,
-      "url": "https://yamodder.github.io/games/?game=los-angeles-crimes",
-      "text": "Update Now"
+      "url": "https://discord.gg/Jn9749hm9J",
+      "text": "Report"
     }
   },
   "categories": [
