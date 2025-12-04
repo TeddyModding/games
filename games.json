@@ -63,17 +63,38 @@
           "banner": "https://play-lh.googleusercontent.com/YV6AU38v3esJ6REQFSHOyvF9_TCaUlpSL3XNYoGte2E0AXVzDOhPvqwDaXkPJ1KbJl8=w526-h296-rw",
           "image": "https://play-lh.googleusercontent.com/qhJSd9LTZMTz0V_dB-rsYPBCghNX_AHIh1O_8pekd_lkkvo1W5yQDJl8APGDCUYN7yg=w240-h480-rw",
           "title": "Grim Soul: Dark Survival RPG",
-          "version": "v7.7.2",
+          "version": "v7.8.5",
           "categoryname": "Survival",
-          "lastUpdated": "30-10-2025",
+          "lastUpdated": "02-12-2025",
           "downloads": [
             {
               "text": "Download",
-              "url": "https://modsfire.com/W6AWRMAPFAfDJo5n",
+              "url": "https://modsfire.com/uwta3005Q7FVvHK",
               "howdown": "https://www.youtube.com/watch?v=6Sqh5Y-KEBI"
             }
           ],
           "demoUrl": "https://www.youtube.com/embed/AuwEm_n_Xgc",
+          "howToInstall": {
+            "required": false,
+            "url": ""
+          }
+        },
+        {
+          "recommended": true,
+          "banner": "https://play-lh.googleusercontent.com/4cqW7HO2zT-9RhKUWEu3InwzVZf9KrWqCiuQYZozCibe3QY_rqQ8RLR9Tahh01QAPg=w526-h296-rw",
+          "image": "https://appadvice.com/app/dead-god-land-survival-games/6444674199",
+          "title": "Dead God Land: Survival",
+          "version": "v0.0.0345",
+          "categoryname": "Survival",
+          "lastUpdated": "04-12-2025",
+          "downloads": [
+            {
+              "text": "Download",
+              "url": "https://enurl.com.br/dead-god-land-v0-0-0345-mod-apk",
+              "howdown": "https://www.youtube.com/embed/BoCRvHsXOTg&t"
+            }
+          ],
+          "demoUrl": "https://www.youtube.com/embed/BoCRvHsXOTg&t",
           "howToInstall": {
             "required": false,
             "url": ""
